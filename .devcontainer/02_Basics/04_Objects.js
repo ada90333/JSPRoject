@@ -24,8 +24,27 @@ const obj3 = {...obj1, ...obj2}
 // console.log(obj1)
 // console.log(obj3)
 
-console.log(Object.keys(user))
-console.log(Object.values(user))
-console.log(Object.entries(user))
+// console.log(Object.keys(user))
+// console.log(Object.values(user))
+// console.log(Object.entries(user))
 
-console.log(user.hasOwnProperty('isLogged'))
+// console.log(user.hasOwnProperty('isLogged'))
+
+// Destructing of the Object
+
+const course = {
+    courseName: 'JS Course',
+    price: '999',
+    courseInstructor: 'Adarsh'
+}
+
+const {courseInstructor: instructor} = course // destructing the object
+
+console.log(instructor)
+
+
+// {
+//     'name': 'Adarsh',
+//     'courseName': 'JS Course',
+//     'price': '999'
+// }
