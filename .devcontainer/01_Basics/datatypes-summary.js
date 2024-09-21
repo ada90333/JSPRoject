@@ -6,3 +6,27 @@
 
 // array, Ojects, Functions
 
+// Stack(Primitive) Memory && Heap(Non-primitive) Memory
+
+
+
+let myName = 'Adarsh'
+
+let anotherName= myName//'Singh'
+anotherName = 'Singh'
+
+console.log(myName)
+console.log(anotherName)
+
+
+let user = {
+    email: 'gmail.com',
+    upi: 'user@ybl'
+}
+
+let user2 = user
+
+user2.email = 'adarsh@gmail.com'
+
+console.log(user)
+console.log(user2)
