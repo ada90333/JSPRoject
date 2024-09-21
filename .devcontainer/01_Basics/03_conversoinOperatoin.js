@@ -28,3 +28,4 @@ let stringNumber = String(number)
 
 console.log(stringNumber)
 console.log(typeof(stringNumber))
+console.log(typeof(true))
