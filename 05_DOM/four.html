@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project JS | DOM</title>
+</head>
+<body style="background-color: #212121;color: #fff;">
+    <ul class = "language">
+        <li> JavaScript</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(langName){
+        const elem = document.createElement('li')
+        elem.innerHTML = `${langName}` // tranverse the whole tree
+        document.querySelector('.language').appendChild(elem)
+    }
+
+    addLanguage('python')
+    addLanguage('typeScript')
+
+    function addOptiLanguage(langName){
+        const elem = document.createElement('li')
+        elem.appendChild(document.createTextNode(langName)) // avoid whole tree tranverse
+        document.querySelector('.language').appendChild(elem)
+    }
+    addOptiLanguage('goLang')
+
+    //Edit
+
+    const secondLang = document.querySelector('li:nth-child(2)')
+    //secondLang.innerHTML = 'Mojo'
+    const newElem = document.createElement('li')
+    newElem.textContent = "Mojo"
+    secondLang.replaceWith(newElem)
+
+    //edit
+    const firstLang = document.querySelector('li:first-child')
+    firstLang.outerHTML = '<li> TypeScript</li>'
+
+    //remove
+    const lastLang = document.querySelector('li:last-child')
+    lastLang.remove()
+
+</script>
+</html>
